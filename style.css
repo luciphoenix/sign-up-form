@@ -46,15 +46,37 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+                            /* Style beginning */
 
-                                /* Style beginning */
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
+@font-face {
+    font-family: kanit-light;
+    src: url('./fonts/Kanit-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: norse-bold;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+@font-face{
+    font-family: kanit-bold-italic;
+    src: url('./fonts/Kanit-BoldItalic.ttf');
+}
+
+@font-face{
+    font-family: monoton;
+    src: url('./fonts/Creepster-Regular.ttf');
+    letter-spacing: 7px;
+}
 body {
     display: flex;
-    border: 5px solid green;
+    border: 5px double rgb(16, 78, 4);
     width: 100vw;
     height: 100vh;
 
@@ -79,7 +101,7 @@ header{
     top: 20%;
     right: 0.1%;
     /* float: right; */
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.877);
     border-radius: 10px;
     border: 4px dashed goldenrod;
     padding: 5px;
@@ -89,6 +111,7 @@ header > p {
     position: absolute;
     left: 35%;
     bottom: 1%;
+    font-family: norse-bold;
 }
 
 #image-logo {
@@ -98,9 +121,10 @@ header > p {
 }
 
 #logo-word {
-    
+    font-family: monoton;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 /* styling of main section */
@@ -109,13 +133,19 @@ main{
     background-color: rgb(238, 238, 240);
     width: 70%;
     height: 100%;
-    
+    font-family: kanit-light;
+    font-size: 1.2rem;
 }
 
 #introduction {
     padding:9rem 0 0 30px ;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
 
-    
+#form-section > p {
+    font-family: kanit-bold-italic;
+    font-size: 1.5rem;
 }
 #form-section{
     padding: 1rem 0 1.5rem 30px;
@@ -130,8 +160,8 @@ form{
 label {
     display: block;
     padding-top: 1rem;
-
-
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 input{
@@ -143,8 +173,12 @@ input{
 }
 
 button {
-    background-color: goldenrod;
+    background-color: rgb(230, 189, 86);
     margin: 25px 0 0 30px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px;
 }
 
 button ~ p {
