@@ -53,7 +53,57 @@ table {
 }
 
 body {
-    border: 2px solid green;
+    display: flex;
+    border: 5px solid green;
     width: 100vw;
     height: 100vh;
+}
+
+header{
+    background-image: url('./images/luci.jpg');
+    background-size: cover;
+    height:100%;
+    width: 30%;
+    background-color: #a52a2a;
+    position: relative;
+    color: aliceblue;
+}
+
+#logo-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.3rem;
+    position: absolute;
+    top: 20%;
+    right: 0.1%;
+    /* float: right; */
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    border: 4px dashed goldenrod;
+    padding: 5px;
+}
+
+header > p {
+    position: absolute;
+    left: 35%;
+    bottom: 1%;
+}
+
+#image-logo {
+    /* border: 2px solid white; */
+
+
+}
+
+#logo-word {
+    
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+main{
+    background-color: blue;
+    width: 70%;
+    height: 100%;
 }
